@@ -1,4 +1,4 @@
-# SERIAL-IN-SERIAL-OUT-SHIFTREGISTER
+# EXP 10-SERIAL-IN-SERIAL-OUT-SHIFTREGISTER
 
 **AIM:**
 
@@ -29,14 +29,29 @@ Each D flip-flop in the circuit has a Data (D) input, a Clock (CLK) input, and a
 
 **PROGRAM**
 
-/* Program for flipflops and verify its truth table in quartus using Verilog programming.
+Developed by:THIRUKUMARAN G RegisterNumber:212223050056
+```
+module EXP10(clk, sin, q);
+input clk;
+input sin;
+output [3:0] q;
+reg [3:0] q;
+always @(posedge clk)
+begin
+q[0] <= sin;
+q[1] <= q[0];
+q[2] <= q[1];
+q[3] <= q[2];
+end
+endmodule
+```
 
-Developed by: RegisterNumber:
-
-*/
 
 **RTL LOGIC FOR SISO Shift Register**
+![image](https://github.com/prideeshm/SERIAL-IN-SERIAL-OUT-SHIFTREGISTER/assets/144870483/664312d8-2d78-47bc-9f81-bb3e1d684ac4)
 
 **TIMING DIGRAMS FOR SISO Shift Register**
+![image](https://github.com/prideeshm/SERIAL-IN-SERIAL-OUT-SHIFTREGISTER/assets/144870483/528deb9c-4aaa-41fa-93e5-e2444ed9b85c)
 
-**RESULTS**
+**RESULTS:**
+SISO Shift Register using verilog and validating their functionality using their functional tables has successful execution of the program.
