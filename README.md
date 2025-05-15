@@ -1,4 +1,4 @@
-# EXP 10-SERIAL-IN-SERIAL-OUT-SHIFTREGISTER
+# SERIAL-IN-SERIAL-OUT-SHIFTREGISTER
 
 **AIM:**
 
@@ -25,11 +25,19 @@ Each D flip-flop in the circuit has a Data (D) input, a Clock (CLK) input, and a
 
 **Procedure**
 
-/* write all the steps invloved */
+1.Initialize the shift register to a known state (e.g., all zeros).
+2.Input a bit serially into the shift register.
+3.Shift the contents of the register one position to the right (or left).
+4.Output the shifted bit from the last stage of the register.
+5.Repeat steps 2-4 for each bit you want to input and shift.
 
 **PROGRAM**
 
-Developed by:THIRUKUMARAN G RegisterNumber:212223050056
+/* 
+Developed by:M SATHYANARAYANAN
+RegisterNumber:212224040300
+
+*/
 ```
 module EXP10(clk, sin, q);
 input clk;
@@ -45,13 +53,16 @@ q[3] <= q[2];
 end
 endmodule
 ```
-
-
 **RTL LOGIC FOR SISO Shift Register**
-![image](https://github.com/prideeshm/SERIAL-IN-SERIAL-OUT-SHIFTREGISTER/assets/144870483/664312d8-2d78-47bc-9f81-bb3e1d684ac4)
+
+![WhatsApp Image 2024-05-06 at 14 57 32_f4266290](https://github.com/veslin23000303/SERIAL-IN-SERIAL-OUT-SHIFTREGISTER/assets/151148539/5441a179-65fe-48c6-b551-0f6f9077837e)
+
 
 **TIMING DIGRAMS FOR SISO Shift Register**
-![image](https://github.com/prideeshm/SERIAL-IN-SERIAL-OUT-SHIFTREGISTER/assets/144870483/528deb9c-4aaa-41fa-93e5-e2444ed9b85c)
 
-**RESULTS:**
+![WhatsApp Image 2024-05-06 at 14 57 12_7369524e](https://github.com/veslin23000303/SERIAL-IN-SERIAL-OUT-SHIFTREGISTER/assets/151148539/226d22aa-37e0-46d7-a232-32cd88f843eb)
+
+
+**RESULTS**
+
 SISO Shift Register using verilog and validating their functionality using their functional tables has successful execution of the program.
